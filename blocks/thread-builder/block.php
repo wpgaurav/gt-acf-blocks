@@ -11,7 +11,7 @@ if (!function_exists('acf_register_block_type')) {
 acf_register_block_type([
     'name'              => 'thread-builder',
     'title'             => __('Thread Builder'),
-    'description'       => __('Create Twitter/X-style conversation threads.'),
+    'description'       => __('Create Twitter X-style conversation threads.'),
     'render_template'   => GT_ACF_BLOCKS_DIR . 'blocks/thread-builder/thread-builder.php',
     'category'          => 'formatting',
     'icon'              => 'format-chat',

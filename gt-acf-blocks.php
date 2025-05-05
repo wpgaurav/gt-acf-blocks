@@ -3,7 +3,7 @@
  * Plugin Name: GT ACF Blocks
  * Plugin URI:  https://gauravtiwari.org
  * Description: Auto-loads ACF block registrations from blocks/ subfolders.
- * Version:     1.0.3
+ * Version:     1.0.4
  * Author:      Gaurav Tiwari
  * Text Domain: gt-acf-blocks
  */
