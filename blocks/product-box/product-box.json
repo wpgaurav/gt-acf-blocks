@@ -1,0 +1,236 @@
+[
+    {
+        "key": "group_product_box",
+        "title": "Product Box",
+        "fields": [
+            {
+                "key": "field_pb_image",
+                "label": "Product Image",
+                "name": "pb_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Select the product image.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": "",
+                "uploader": "",
+                "acfe_thumbnail": 0,
+                "upload_folder": ""
+            },
+            {
+                "key": "field_pb_title",
+                "label": "Product Title",
+                "name": "pb_title",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Enter the product title.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Enter product title",
+                "maxlength": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_pb_rating",
+                "label": "Star Rating",
+                "name": "pb_rating",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "Enter a rating from 0 to 5 (use half values as needed).",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 0,
+                "min": 0,
+                "max": 5,
+                "step": 0.5,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_pb_description",
+                "label": "Product Description",
+                "name": "pb_description",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "Enter the product description.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 0,
+                "acfe_wysiwyg_auto_init": 0,
+                "acfe_wysiwyg_height": 300,
+                "acfe_wysiwyg_min_height": 300,
+                "acfe_wysiwyg_max_height": "",
+                "acfe_wysiwyg_valid_elements": "",
+                "acfe_wysiwyg_custom_style": "",
+                "acfe_wysiwyg_disable_wp_style": 0,
+                "acfe_wysiwyg_autoresize": 0,
+                "acfe_wysiwyg_disable_resize": 0,
+                "acfe_wysiwyg_remove_path": 0,
+                "acfe_wysiwyg_menubar": 0,
+                "acfe_wysiwyg_transparent": 0,
+                "acfe_wysiwyg_merge_toolbar": 0,
+                "acfe_wysiwyg_custom_toolbar": 0,
+                "acfe_wysiwyg_toolbar_buttons": []
+            },
+            {
+                "key": "field_pb_buttons",
+                "label": "Product Buttons",
+                "name": "pb_buttons",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Add one or more buttons.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Button",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_pb_cta_text",
+                        "label": "CTA Text",
+                        "name": "pb_cta_text",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Enter the button text.",
+                        "required": 1,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Button text",
+                        "maxlength": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_pb_buttons"
+                    },
+                    {
+                        "key": "field_pb_cta_url",
+                        "label": "URL",
+                        "name": "pb_cta_url",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "Enter the button URL.",
+                        "required": 1,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_pb_buttons"
+                    },
+                    {
+                        "key": "field_pb_cta_class",
+                        "label": "Link Class",
+                        "name": "pb_cta_class",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Optional: Enter a CSS class for the button.",
+                        "required": 0,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "e.g. btn-primary",
+                        "maxlength": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_pb_buttons"
+                    },
+                    {
+                        "key": "field_pb_cta_rel",
+                        "label": "Link Rel",
+                        "name": "pb_cta_rel",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Optional: Enter a rel attribute (e.g. noopener noreferrer).",
+                        "required": 0,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "e.g. noopener noreferrer",
+                        "maxlength": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_pb_buttons"
+                    }
+                ],
+                "acfe_repeater_stylised_button": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/product-box"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

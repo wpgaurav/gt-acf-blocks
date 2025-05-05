@@ -1,0 +1,171 @@
+[
+    {
+        "key": "group_acf_accord_block",
+        "title": "Accordion Blocks",
+        "fields": [
+            {
+                "key": "acf_accord_enable_faq_schema",
+                "label": "Enable FAQ Schema",
+                "name": "acf_accord_enable_faq_schema",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "Enable FAQ Schema for this accordion block.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 0,
+                "message": "",
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "style": ""
+            },
+            {
+                "key": "acf_accordion_class",
+                "label": "Accordion Class",
+                "name": "acf_accordion_class",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Extra CSS class for the accordion container.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "acf_accordion_inline",
+                "label": "Inline CSS",
+                "name": "acf_accordion_inline",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Inline CSS to apply to the accordion container.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": "",
+                "acfe_textarea_code": 0
+            },
+            {
+                "key": "acf_accord_groups",
+                "label": "Accordion Groups",
+                "name": "acf_accord_groups",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Add accordion groups.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "pagination": 1,
+                "rows_per_page": 20,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Group",
+                "sub_fields": [
+                    {
+                        "key": "acf_accord_group_title",
+                        "label": "Group Title",
+                        "name": "acf_accord_group_title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Enter the title for this accordion group.",
+                        "required": 0,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "acf_accord_groups"
+                    },
+                    {
+                        "key": "acf_accord_group_content",
+                        "label": "Group Content",
+                        "name": "acf_accord_group_content",
+                        "aria-label": "",
+                        "type": "wysiwyg",
+                        "instructions": "Enter the content for this accordion group.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "allow_in_bindings": 1,
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "delay": 0,
+                        "acfe_wysiwyg_auto_init": 0,
+                        "acfe_wysiwyg_height": 300,
+                        "acfe_wysiwyg_min_height": 300,
+                        "acfe_wysiwyg_max_height": "",
+                        "acfe_wysiwyg_valid_elements": "",
+                        "acfe_wysiwyg_custom_style": "",
+                        "acfe_wysiwyg_disable_wp_style": 0,
+                        "acfe_wysiwyg_autoresize": 0,
+                        "acfe_wysiwyg_disable_resize": 0,
+                        "acfe_wysiwyg_remove_path": 0,
+                        "acfe_wysiwyg_menubar": 0,
+                        "acfe_wysiwyg_transparent": 0,
+                        "acfe_wysiwyg_merge_toolbar": 0,
+                        "acfe_wysiwyg_custom_toolbar": 0,
+                        "acfe_wysiwyg_toolbar_buttons": [],
+                        "parent_repeater": "acf_accord_groups"
+                    }
+                ],
+                "acfe_repeater_stylised_button": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/accordion"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

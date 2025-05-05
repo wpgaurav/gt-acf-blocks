@@ -1,0 +1,713 @@
+[
+    {
+        "key": "group_email_form_block",
+        "title": "Email Form Block",
+        "fields": [
+            {
+                "key": "field_form_type",
+                "label": "Form Type",
+                "name": "form_type",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "form_action": "Form Action",
+                    "webhook": "Webhook"
+                },
+                "default_value": "form_action",
+                "ui": 1,
+                "multiple": 0,
+                "allow_null": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "allow_custom": 0,
+                "search_placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": ""
+            },
+            {
+                "key": "field_form_action_url",
+                "label": "Form Action URL",
+                "name": "form_action_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "URL to submit the form if using form action.",
+                "required": false,
+                "conditional_logic": [
+                    [
+                        "field_form_type",
+                        "==",
+                        "form_action"
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_webhook_url",
+                "label": "Webhook URL",
+                "name": "webhook_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "Webhook URL to submit the form data.",
+                "required": false,
+                "conditional_logic": [
+                    [
+                        "field_form_type",
+                        "==",
+                        "webhook"
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_webhook_auth_headers",
+                "label": "Webhook Authentication Headers",
+                "name": "webhook_auth_headers",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Add authentication headers (e.g., Bearer token) for the webhook.",
+                "required": false,
+                "conditional_logic": [
+                    [
+                        "field_form_type",
+                        "==",
+                        "webhook"
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": "",
+                "acfe_textarea_code": 0
+            },
+            {
+                "key": "field_display_name_field",
+                "label": "Display Name Field",
+                "name": "display_name_field",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "ui": 1,
+                "default_value": 1,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "style": ""
+            },
+            {
+                "key": "field_name_field_required",
+                "label": "Name Field Required",
+                "name": "name_field_required",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "If unchecked, the name field will be optional.",
+                "required": false,
+                "conditional_logic": [
+                    [
+                        "field_display_name_field",
+                        "==",
+                        "1"
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "style": ""
+            },
+            {
+                "key": "field_name_field_attributes",
+                "label": "Name Field Attributes",
+                "name": "name_field_attributes",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "Set custom ID, classes, and inline CSS for the name field.",
+                "required": false,
+                "conditional_logic": [
+                    [
+                        "field_display_name_field",
+                        "==",
+                        "1"
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "sub_fields": [
+                    {
+                        "key": "field_name_attr_id",
+                        "label": "ID",
+                        "name": "id",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_name_attr_class",
+                        "label": "Class",
+                        "name": "class",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_name_attr_inline_css",
+                        "label": "Inline CSS",
+                        "name": "inline_css",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ],
+                "layout": "block",
+                "acfe_seamless_style": 0,
+                "acfe_group_modal": 0,
+                "acfe_group_modal_close": 0,
+                "acfe_group_modal_button": "",
+                "acfe_group_modal_size": "large"
+            },
+            {
+                "key": "field_email_field_attributes",
+                "label": "Email Field Attributes",
+                "name": "email_field_attributes",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "Set custom ID, classes, and inline CSS for the email field.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "sub_fields": [
+                    {
+                        "key": "field_email_attr_id",
+                        "label": "ID",
+                        "name": "id",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_email_attr_class",
+                        "label": "Class",
+                        "name": "class",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_email_attr_inline_css",
+                        "label": "Inline CSS",
+                        "name": "inline_css",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ],
+                "layout": "block",
+                "acfe_seamless_style": 0,
+                "acfe_group_modal": 0,
+                "acfe_group_modal_close": 0,
+                "acfe_group_modal_button": "",
+                "acfe_group_modal_size": "large"
+            },
+            {
+                "key": "field_hidden_fields",
+                "label": "Hidden Fields",
+                "name": "hidden_fields",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Add hidden input fields (e.g., honeypot, custom fields).",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "button_label": "Add Hidden Field",
+                "min": 0,
+                "max": 0,
+                "rows_per_page": 20,
+                "layout": "table",
+                "collapsed": "",
+                "acfe_repeater_stylised_button": 0,
+                "sub_fields": [
+                    {
+                        "key": "field_hidden_field_name",
+                        "label": "Field Name",
+                        "name": "field_name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_hidden_fields"
+                    },
+                    {
+                        "key": "field_hidden_field_value",
+                        "label": "Field Value",
+                        "name": "field_value",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_hidden_fields"
+                    },
+                    {
+                        "key": "field_hidden_field_attributes",
+                        "label": "Attributes",
+                        "name": "attributes",
+                        "aria-label": "",
+                        "type": "group",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "sub_fields": [
+                            {
+                                "key": "field_hidden_attr_id",
+                                "label": "ID",
+                                "name": "id",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": false,
+                                "conditional_logic": false,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_hidden_attr_class",
+                                "label": "Class",
+                                "name": "class",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": false,
+                                "conditional_logic": false,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_hidden_attr_inline_css",
+                                "label": "Inline CSS",
+                                "name": "inline_css",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": false,
+                                "conditional_logic": false,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            }
+                        ],
+                        "layout": "block",
+                        "acfe_seamless_style": 0,
+                        "acfe_group_modal": 0,
+                        "acfe_group_modal_close": 0,
+                        "acfe_group_modal_button": "",
+                        "acfe_group_modal_size": "large",
+                        "parent_repeater": "field_hidden_fields"
+                    }
+                ]
+            },
+            {
+                "key": "field_button_text",
+                "label": "Button Text",
+                "name": "button_text",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Submit",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_button_attributes",
+                "label": "Button Attributes",
+                "name": "button_attributes",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "Set custom ID, classes, and inline CSS for the button.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "sub_fields": [
+                    {
+                        "key": "field_button_attr_id",
+                        "label": "ID",
+                        "name": "id",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_button_attr_class",
+                        "label": "Class",
+                        "name": "class",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_button_attr_inline_css",
+                        "label": "Inline CSS",
+                        "name": "inline_css",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ],
+                "layout": "block",
+                "acfe_seamless_style": 0,
+                "acfe_group_modal": 0,
+                "acfe_group_modal_close": 0,
+                "acfe_group_modal_button": "",
+                "acfe_group_modal_size": "large"
+            },
+            {
+                "key": "field_success_message",
+                "label": "Success Message",
+                "name": "success_message",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Message displayed upon successful form submission.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": "",
+                "acfe_textarea_code": 0
+            },
+            {
+                "key": "field_form_attributes",
+                "label": "Form Attributes",
+                "name": "form_attributes",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "Set custom ID, classes, and inline CSS for the form element.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "sub_fields": [
+                    {
+                        "key": "field_form_attr_id",
+                        "label": "ID",
+                        "name": "id",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_form_attr_class",
+                        "label": "Class",
+                        "name": "class",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_form_attr_inline_css",
+                        "label": "Inline CSS",
+                        "name": "inline_css",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ],
+                "layout": "block",
+                "acfe_seamless_style": 0,
+                "acfe_group_modal": 0,
+                "acfe_group_modal_close": 0,
+                "acfe_group_modal_button": "",
+                "acfe_group_modal_size": "large"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/email-form"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Field group for the Email Form block.",
+        "show_in_rest": 0,
+        "acfe_autosync": "",
+        "acfe_form": 0,
+        "acfe_display_title": "",
+        "acfe_meta": "",
+        "acfe_note": ""
+    }
+]

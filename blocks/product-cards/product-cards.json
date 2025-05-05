@@ -1,0 +1,281 @@
+[
+    {
+        "key": "group_product_cards",
+        "title": "Product Cards",
+        "fields": [
+            {
+                "key": "field_pc_block_title",
+                "label": "Product Title",
+                "name": "pc_block_title",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Product Name",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_pc_block_title_color",
+                "label": "Title Text Color",
+                "name": "pc_block_title_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#FFFFFF",
+                "enable_opacity": false,
+                "return_format": "string",
+                "display": "default",
+                "button_label": "Select Color",
+                "color_picker": true,
+                "absolute": false,
+                "input": true,
+                "allow_null": true,
+                "theme_colors": false,
+                "colors": []
+            },
+            {
+                "key": "field_pc_block_title_bg_color",
+                "label": "Title Background Color",
+                "name": "pc_block_title_bg_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#007bff",
+                "enable_opacity": false,
+                "return_format": "string",
+                "display": "default",
+                "button_label": "Select Color",
+                "color_picker": true,
+                "absolute": false,
+                "input": true,
+                "allow_null": true,
+                "theme_colors": false,
+                "colors": []
+            },
+            {
+                "key": "field_pc_block_product_image",
+                "label": "Product Image",
+                "name": "pc_block_product_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": "",
+                "uploader": "",
+                "acfe_thumbnail": 0,
+                "upload_folder": ""
+            },
+            {
+                "key": "field_pc_block_description",
+                "label": "Product Description",
+                "name": "pc_block_description",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "This product is cool and everything. 1rem font-size, visual text.",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": "",
+                "acfe_textarea_code": 0
+            },
+            {
+                "key": "field_pc_block_root_class",
+                "label": "Custom CSS Class",
+                "name": "pc_block_root_class",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Optional. Add a custom class to the root div.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_pc_block_button_text",
+                "label": "Button Text",
+                "name": "pc_block_button_text",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Learn more",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_pc_block_button_url",
+                "label": "Button URL",
+                "name": "pc_block_button_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_pc_block_button_rel",
+                "label": "Button Rel Attribute",
+                "name": "pc_block_button_rel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Optional. Add a rel attribute (e.g., nofollow, noopener).",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_pc_block_text_link",
+                "label": "Additional Text Link",
+                "name": "pc_block_text_link",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Text for the additional link below the button.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_pc_block_text_link_url",
+                "label": "Additional Link URL",
+                "name": "pc_block_text_link_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_pc_block_text_link_rel",
+                "label": "Additional Link Rel Attribute",
+                "name": "pc_block_text_link_rel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Optional. Add a rel attribute (e.g., nofollow, noopener).",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/product-cards"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "A customizable product card with an image, title, description, button, and additional link.",
+        "show_in_rest": 0
+    }
+]

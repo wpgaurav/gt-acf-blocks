@@ -1,0 +1,218 @@
+[
+    {
+        "key": "group_cb_coupon_code",
+        "title": "Coupon Code",
+        "fields": [
+            {
+                "key": "field_cb_offer_details",
+                "label": "Offer Details",
+                "name": "cb_offer_details",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "Enter the details of the offer.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "acfe_wysiwyg_height": 300,
+                "acfe_wysiwyg_max_height": "",
+                "acfe_wysiwyg_valid_elements": "",
+                "acfe_wysiwyg_custom_style": "",
+                "acfe_wysiwyg_disable_wp_style": 0,
+                "acfe_wysiwyg_autoresize": 0,
+                "acfe_wysiwyg_disable_resize": 0,
+                "acfe_wysiwyg_remove_path": 0,
+                "acfe_wysiwyg_menubar": 0,
+                "acfe_wysiwyg_transparent": 0,
+                "acfe_wysiwyg_merge_toolbar": 0,
+                "acfe_wysiwyg_custom_toolbar": 1,
+                "acfe_wysiwyg_toolbar_buttons": {
+                    "acfe_wysiwyg_toolbar_1": {
+                        "0": {
+                            "acfe_wysiwyg_toolbar_row": "formatselect"
+                        },
+                        "1": {
+                            "acfe_wysiwyg_toolbar_row": "bold"
+                        },
+                        "2": {
+                            "acfe_wysiwyg_toolbar_row": "italic"
+                        },
+                        "3": {
+                            "acfe_wysiwyg_toolbar_row": "bullist"
+                        },
+                        "4": {
+                            "acfe_wysiwyg_toolbar_row": "numlist"
+                        },
+                        "5": {
+                            "acfe_wysiwyg_toolbar_row": "blockquote"
+                        },
+                        "6": {
+                            "acfe_wysiwyg_toolbar_row": "alignleft"
+                        },
+                        "7": {
+                            "acfe_wysiwyg_toolbar_row": "aligncenter"
+                        },
+                        "8": {
+                            "acfe_wysiwyg_toolbar_row": "alignright"
+                        },
+                        "9": {
+                            "acfe_wysiwyg_toolbar_row": "link"
+                        },
+                        "67f24df9a7431": {
+                            "acfe_wysiwyg_toolbar_row": "wp_add_media"
+                        },
+                        "67f24dfca7432": {
+                            "acfe_wysiwyg_toolbar_row": "source_code"
+                        }
+                    },
+                    "acfe_wysiwyg_toolbar_2": [
+                        {
+                            "acfe_wysiwyg_toolbar_row": "strikethrough"
+                        },
+                        {
+                            "acfe_wysiwyg_toolbar_row": "hr"
+                        },
+                        {
+                            "acfe_wysiwyg_toolbar_row": "forecolor"
+                        },
+                        {
+                            "acfe_wysiwyg_toolbar_row": "pastetext"
+                        },
+                        {
+                            "acfe_wysiwyg_toolbar_row": "removeformat"
+                        },
+                        {
+                            "acfe_wysiwyg_toolbar_row": "charmap"
+                        },
+                        {
+                            "acfe_wysiwyg_toolbar_row": "outdent"
+                        },
+                        {
+                            "acfe_wysiwyg_toolbar_row": "indent"
+                        },
+                        {
+                            "acfe_wysiwyg_toolbar_row": "undo"
+                        },
+                        {
+                            "acfe_wysiwyg_toolbar_row": "redo"
+                        }
+                    ],
+                    "acfe_wysiwyg_toolbar_3": "",
+                    "acfe_wysiwyg_toolbar_4": ""
+                },
+                "allow_in_bindings": 1,
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 0,
+                "delay": 0,
+                "acfe_wysiwyg_auto_init": 0,
+                "acfe_wysiwyg_min_height": 300
+            },
+            {
+                "key": "field_cb_code",
+                "label": "Coupon Code",
+                "name": "cb_code",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Enter the coupon code.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 1,
+                "placeholder": "COUPON2025",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_cb_copy_text",
+                "label": "Copy Coupon Button Text",
+                "name": "cb_copy_text",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Text for the copy coupon button.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Copy Coupon",
+                "placeholder": "Copy Coupon",
+                "maxlength": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_cb_activate_text",
+                "label": "Activate Discount Button Text",
+                "name": "cb_activate_text",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Text for the activate discount button.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Activate Discount",
+                "placeholder": "Activate Discount",
+                "maxlength": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_cb_activate_url",
+                "label": "Activate Discount URL",
+                "name": "cb_activate_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "Enter the URL where users can activate the discount.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/cb-coupon-code"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "acfe_autosync": "",
+        "acfe_form": 0,
+        "acfe_display_title": "",
+        "acfe_meta": "",
+        "acfe_note": ""
+    }
+]

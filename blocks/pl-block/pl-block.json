@@ -1,0 +1,393 @@
+[
+    {
+        "key": "group_pl_block",
+        "title": "Product List Block",
+        "fields": [
+            {
+                "key": "field_pl_block_rank",
+                "label": "Rank",
+                "name": "pl_block_rank",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Enter the product rank (can be text).",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Rank",
+                "maxlength": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_pl_block_icon",
+                "label": "Icon",
+                "name": "pl_block_icon",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Select an icon image.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": "",
+                "uploader": "",
+                "acfe_thumbnail": 0,
+                "upload_folder": ""
+            },
+            {
+                "key": "field_67f3b290c6b3a",
+                "label": "Image Width",
+                "name": "pl_block_image_width",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_pl_block_product_name",
+                "label": "Product Name",
+                "name": "pl_block_product_name",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Enter the product name.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 1,
+                "placeholder": "Product Name",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_pl_block_description",
+                "label": "Description",
+                "name": "pl_block_description",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "Enter the product description.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 0,
+                "acfe_wysiwyg_auto_init": 0,
+                "acfe_wysiwyg_height": 300,
+                "acfe_wysiwyg_min_height": 300,
+                "acfe_wysiwyg_max_height": "",
+                "acfe_wysiwyg_valid_elements": "",
+                "acfe_wysiwyg_custom_style": "",
+                "acfe_wysiwyg_disable_wp_style": 0,
+                "acfe_wysiwyg_autoresize": 0,
+                "acfe_wysiwyg_disable_resize": 0,
+                "acfe_wysiwyg_remove_path": 0,
+                "acfe_wysiwyg_menubar": 0,
+                "acfe_wysiwyg_transparent": 0,
+                "acfe_wysiwyg_merge_toolbar": 0,
+                "acfe_wysiwyg_custom_toolbar": 0,
+                "acfe_wysiwyg_toolbar_buttons": []
+            },
+            {
+                "key": "field_pl_block_pricing",
+                "label": "Pricing",
+                "name": "pl_block_pricing",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Add pricing levels.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "row",
+                "button_label": "Add Pricing",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_pl_block_pricing_title",
+                        "label": "Pricing Title",
+                        "name": "pl_block_pricing_title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Enter a label for this pricing level.",
+                        "required": 1,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "e.g. Basic",
+                        "maxlength": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_pl_block_pricing"
+                    },
+                    {
+                        "key": "field_pl_block_pricing_amount",
+                        "label": "Pricing Amount",
+                        "name": "pl_block_pricing_amount",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Enter the price for this level.",
+                        "required": 1,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "$0.00",
+                        "maxlength": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_pl_block_pricing"
+                    }
+                ],
+                "acfe_repeater_stylised_button": 0
+            },
+            {
+                "key": "field_pl_block_coupons",
+                "label": "Coupons",
+                "name": "pl_block_coupons",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Add coupon codes with discount offers.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "row",
+                "button_label": "Add Coupon",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_pl_block_coupon_code",
+                        "label": "Coupon Code",
+                        "name": "pl_block_coupon_code",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Enter the coupon code.",
+                        "required": 1,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "COUPON2025",
+                        "maxlength": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_pl_block_coupons"
+                    },
+                    {
+                        "key": "field_pl_block_coupon_offer",
+                        "label": "Discount Offer",
+                        "name": "pl_block_coupon_offer",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Enter the discount offer details.",
+                        "required": 0,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "10% off",
+                        "maxlength": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_pl_block_coupons"
+                    }
+                ],
+                "acfe_repeater_stylised_button": 0
+            },
+            {
+                "key": "field_pl_block_buttons",
+                "label": "Get Offer Buttons",
+                "name": "pl_block_buttons",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Add buttons for getting offers.",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "row",
+                "button_label": "Add Button",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_pl_block_button_text",
+                        "label": "Button Text",
+                        "name": "pl_block_button_text",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Enter the button text.",
+                        "required": 1,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Get Offer",
+                        "maxlength": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_pl_block_buttons"
+                    },
+                    {
+                        "key": "field_pl_block_button_url",
+                        "label": "Button URL",
+                        "name": "pl_block_button_url",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "Enter the URL for the button.",
+                        "required": 1,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_pl_block_buttons"
+                    },
+                    {
+                        "key": "field_pl_block_button_rel",
+                        "label": "Link Rel",
+                        "name": "pl_block_button_rel",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Enter the rel attribute (optional).",
+                        "required": 0,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "noopener noreferrer",
+                        "maxlength": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_pl_block_buttons"
+                    },
+                    {
+                        "key": "field_pl_block_button_class",
+                        "label": "Button Class",
+                        "name": "pl_block_button_class",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Enter a CSS class for the button (optional).",
+                        "required": 0,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "btn-primary",
+                        "maxlength": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_pl_block_buttons"
+                    }
+                ],
+                "acfe_repeater_stylised_button": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/pl-block"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "acfe_autosync": "",
+        "acfe_form": 0,
+        "acfe_display_title": "",
+        "acfe_meta": "",
+        "acfe_note": ""
+    }
+]

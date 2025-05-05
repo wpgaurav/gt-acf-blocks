@@ -1,0 +1,444 @@
+[
+    {
+        "key": "group_section_block",
+        "title": "Section Block",
+        "fields": [
+            {
+                "key": "field_section_structure_tab",
+                "label": "Structure",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0,
+                "no_preference": 0
+            },
+            {
+                "key": "field_acf_section_html_tag",
+                "label": "HTML Tag",
+                "name": "acf_section_html_tag",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "Choose the HTML tag for this section",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "div": "div",
+                    "section": "section",
+                    "article": "article",
+                    "aside": "aside",
+                    "header": "header",
+                    "footer": "footer",
+                    "main": "main",
+                    "custom": "Custom tag"
+                },
+                "default_value": "section",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "allow_custom": 0,
+                "search_placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": ""
+            },
+            {
+                "key": "field_acf_section_custom_tag",
+                "label": "Custom HTML Tag",
+                "name": "acf_section_custom_tag",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Enter a custom HTML tag (only if 'Custom tag' is selected above)",
+                "required": false,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_acf_section_html_tag",
+                            "operator": "==",
+                            "value": "custom"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_acf_section_id",
+                "label": "Section ID",
+                "name": "acf_section_id",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Optional ID attribute for the section",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "prepend": "#",
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "append": ""
+            },
+            {
+                "key": "field_acf_section_custom_class",
+                "label": "Custom Classes",
+                "name": "acf_section_custom_class",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Add custom CSS classes (space separated)",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_section_utility_tab",
+                "label": "Utility Classes",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0,
+                "no_preference": 0
+            },
+            {
+                "key": "field_acf_layout_class",
+                "label": "Layout Classes",
+                "name": "acf_layout_class",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Add layout utility classes (container, flex, grid, etc.)",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placeholder": "e.g. container d-flex justify-content-between",
+                "default_value": "",
+                "maxlength": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_acf_spacing_class",
+                "label": "Spacing Classes",
+                "name": "acf_spacing_class",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Add spacing utility classes",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placeholder": "e.g. py-5 mt-4 mb-lg-5",
+                "default_value": "",
+                "maxlength": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_acf_bg_class",
+                "label": "Background Classes",
+                "name": "acf_bg_class",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Add background utility classes",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placeholder": "e.g. bg-dark bg-opacity-75",
+                "default_value": "",
+                "maxlength": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_acf_text_class",
+                "label": "Text Classes",
+                "name": "acf_text_class",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Add text utility classes",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placeholder": "e.g. text-center text-md-start",
+                "default_value": "",
+                "maxlength": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_acf_responsive_class",
+                "label": "Responsive Classes",
+                "name": "acf_responsive_class",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Add responsive utility classes",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placeholder": "e.g. d-none d-md-block",
+                "default_value": "",
+                "maxlength": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_section_background_tab",
+                "label": "Background",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0,
+                "no_preference": 0
+            },
+            {
+                "key": "field_acf_bg_color",
+                "label": "Background Color",
+                "name": "acf_bg_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "enable_opacity": 1,
+                "default_value": "",
+                "return_format": "string",
+                "display": "default",
+                "button_label": "Select Color",
+                "color_picker": true,
+                "absolute": false,
+                "input": true,
+                "allow_null": true,
+                "theme_colors": false,
+                "colors": []
+            },
+            {
+                "key": "field_acf_bg_image",
+                "label": "Background Image",
+                "name": "acf_bg_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": "",
+                "uploader": "",
+                "acfe_thumbnail": 0,
+                "upload_folder": ""
+            },
+            {
+                "key": "field_acf_bg_overlay",
+                "label": "Background Overlay",
+                "name": "acf_bg_overlay",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "Overlay color (with transparency)",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "enable_opacity": 1,
+                "default_value": "",
+                "return_format": "string",
+                "display": "default",
+                "button_label": "Select Color",
+                "color_picker": true,
+                "absolute": false,
+                "input": true,
+                "allow_null": true,
+                "theme_colors": false,
+                "colors": []
+            },
+            {
+                "key": "field_acf_bg_video",
+                "label": "Background Video",
+                "name": "acf_bg_video",
+                "aria-label": "",
+                "type": "file",
+                "instructions": "Upload MP4 video",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "mime_types": "mp4",
+                "library": "all",
+                "min_size": 0,
+                "max_size": 0,
+                "uploader": "",
+                "preview_style": "default",
+                "placeholder": "Select",
+                "upload_folder": "",
+                "button_label": "Add File",
+                "stylised_button": 0,
+                "file_count": 0,
+                "multiple": 0,
+                "min": "",
+                "max": ""
+            },
+            {
+                "key": "field_section_custom_css_tab",
+                "label": "Custom CSS",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0,
+                "no_preference": 0
+            },
+            {
+                "key": "field_acf_custom_css",
+                "label": "Inline CSS",
+                "name": "acf_custom_css",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Add custom CSS for this block. Will be printed in the footer.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placeholder": ".section-content h2 { color: red; }\n.section-content p { margin-bottom: 2em; }",
+                "rows": 10,
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "acfe_textarea_code": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/acf-section"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "acfe_autosync": "",
+        "acfe_form": 0,
+        "acfe_display_title": "",
+        "acfe_meta": "",
+        "acfe_note": ""
+    }
+]

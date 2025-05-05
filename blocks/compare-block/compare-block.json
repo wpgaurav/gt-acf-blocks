@@ -1,0 +1,315 @@
+[
+    {
+        "key": "group_compare_block",
+        "title": "Compare Block",
+        "fields": [
+            {
+                "key": "field_comp_columns",
+                "label": "Number of Columns",
+                "name": "comp_columns",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "Specify the number of columns (e.g., 2, 3, 4).",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 2,
+                "min": "",
+                "max": "",
+                "step": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_comp_columns_data",
+                "label": "Columns Data",
+                "name": "comp_columns_data",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Add columns and configure their settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_comp_title",
+                        "label": "Column Title",
+                        "name": "comp_title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_comp_columns_data"
+                    },
+                    {
+                        "key": "field_comp_title_bg",
+                        "label": "Title Background Color",
+                        "name": "comp_title_bg",
+                        "aria-label": "",
+                        "type": "color_picker",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": false,
+                        "return_format": "string",
+                        "display": "default",
+                        "button_label": "Select Color",
+                        "color_picker": true,
+                        "absolute": false,
+                        "input": true,
+                        "allow_null": true,
+                        "theme_colors": false,
+                        "colors": [],
+                        "parent_repeater": "field_comp_columns_data"
+                    },
+                    {
+                        "key": "field_comp_title_color",
+                        "label": "Title Text Color",
+                        "name": "comp_title_color",
+                        "aria-label": "",
+                        "type": "color_picker",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": false,
+                        "return_format": "string",
+                        "display": "default",
+                        "button_label": "Select Color",
+                        "color_picker": true,
+                        "absolute": false,
+                        "input": true,
+                        "allow_null": true,
+                        "theme_colors": false,
+                        "colors": [],
+                        "parent_repeater": "field_comp_columns_data"
+                    },
+                    {
+                        "key": "field_comp_text",
+                        "label": "Column Text",
+                        "name": "comp_text",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "new_lines": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "rows": "",
+                        "acfe_textarea_code": 0,
+                        "parent_repeater": "field_comp_columns_data"
+                    },
+                    {
+                        "key": "field_comp_repeater_list",
+                        "label": "List Items",
+                        "name": "comp_repeater_list",
+                        "aria-label": "",
+                        "type": "repeater",
+                        "instructions": "Add list items here.",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "min": 0,
+                        "max": 0,
+                        "rows_per_page": 20,
+                        "layout": "table",
+                        "button_label": "Add Row",
+                        "collapsed": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_comp_list_item",
+                                "label": "List Item",
+                                "name": "comp_list_item",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": false,
+                                "conditional_logic": false,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "parent_repeater": "field_comp_repeater_list"
+                            }
+                        ],
+                        "acfe_repeater_stylised_button": 0,
+                        "parent_repeater": "field_comp_columns_data"
+                    },
+                    {
+                        "key": "field_comp_list_class",
+                        "label": "List CSS Class",
+                        "name": "comp_list_class",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Specify a class for the list (optional).",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_comp_columns_data"
+                    },
+                    {
+                        "key": "field_comp_column_style",
+                        "label": "Column Custom Style",
+                        "name": "comp_column_style",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Enter CSS properties manually, e.g., 'border:1px solid #333; border-radius:10px;'.",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_comp_columns_data"
+                    }
+                ],
+                "acfe_repeater_stylised_button": 0
+            },
+            {
+                "key": "field_comp_cta_text",
+                "label": "CTA Button Text",
+                "name": "comp_cta_text",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Enter the CTA button text.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_comp_cta_url",
+                "label": "CTA Button URL",
+                "name": "comp_cta_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "Enter the CTA button URL.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_comp_cta_url_rel_tag",
+                "label": "CTA Button Rel Attribute",
+                "name": "comp_cta_url_rel_tag",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Enter the rel attribute (e.g., nofollow, noreferrer).",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/compare"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
