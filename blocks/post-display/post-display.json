@@ -1,0 +1,173 @@
+{
+  "key": "group_post_display",
+  "title": "Post Display Block",
+  "fields": [
+    {
+      "key": "field_pd_selected_posts",
+      "label": "Select Posts",
+      "name": "pd_selected_posts",
+      "type": "relationship",
+      "instructions": "Select the posts you want to display. Supports all post types.",
+      "required": 1,
+      "conditional_logic": 0,
+      "post_type": [],
+      "filters": [
+        "search",
+        "post_type",
+        "taxonomy"
+      ],
+      "elements": [
+        "featured_image"
+      ],
+      "min": 1,
+      "max": "",
+      "return_format": "object"
+    },
+    {
+      "key": "field_pd_layout",
+      "label": "Layout",
+      "name": "pd_layout",
+      "type": "select",
+      "instructions": "Choose how to display the posts",
+      "required": 0,
+      "conditional_logic": 0,
+      "choices": {
+        "text_links": "Text Links Only",
+        "thumbnail": "Thumbnail with Text",
+        "grid": "Grid Layout"
+      },
+      "default_value": "text_links",
+      "allow_null": 0,
+      "multiple": 0,
+      "ui": 1,
+      "return_format": "value"
+    },
+    {
+      "key": "field_pd_columns",
+      "label": "Number of Columns",
+      "name": "pd_columns",
+      "type": "select",
+      "instructions": "Choose the number of columns for grid layout",
+      "required": 0,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_pd_layout",
+            "operator": "==",
+            "value": "grid"
+          }
+        ]
+      ],
+      "choices": {
+        "2": "2 Columns",
+        "3": "3 Columns"
+      },
+      "default_value": "2",
+      "allow_null": 0,
+      "multiple": 0,
+      "ui": 1,
+      "return_format": "value"
+    },
+    {
+      "key": "field_pd_show_excerpt",
+      "label": "Show Excerpt",
+      "name": "pd_show_excerpt",
+      "type": "true_false",
+      "instructions": "Show post excerpt",
+      "required": 0,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_pd_layout",
+            "operator": "!=",
+            "value": "text_links"
+          }
+        ]
+      ],
+      "ui": 1
+    },
+    {
+      "key": "field_pd_show_date",
+      "label": "Show Date",
+      "name": "pd_show_date",
+      "type": "true_false",
+      "instructions": "Show post date",
+      "required": 0,
+      "conditional_logic": 0,
+      "ui": 1
+    },
+    {
+      "key": "field_pd_show_author",
+      "label": "Show Author",
+      "name": "pd_show_author",
+      "type": "true_false",
+      "instructions": "Show post author",
+      "required": 0,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_pd_layout",
+            "operator": "!=",
+            "value": "text_links"
+          }
+        ]
+      ],
+      "ui": 1
+    },
+    {
+      "key": "field_pd_title_tag",
+      "label": "Title HTML Tag",
+      "name": "pd_title_tag",
+      "type": "select",
+      "instructions": "Choose the HTML tag for post titles",
+      "required": 0,
+      "conditional_logic": [
+        [
+          {
+            "field": "field_pd_layout",
+            "operator": "!=",
+            "value": "text_links"
+          }
+        ]
+      ],
+      "choices": {
+        "h2": "H2",
+        "h3": "H3",
+        "h4": "H4",
+        "h5": "H5",
+        "h6": "H6"
+      },
+      "default_value": "h3",
+      "allow_null": 0,
+      "multiple": 0,
+      "ui": 1,
+      "return_format": "value"
+    },
+    {
+      "key": "field_pd_custom_class",
+      "label": "Custom CSS Class",
+      "name": "pd_custom_class",
+      "type": "text",
+      "instructions": "Add a custom CSS class to the block",
+      "required": 0,
+      "conditional_logic": 0
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/post-display"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Configuration for Post Display Block"
+}
