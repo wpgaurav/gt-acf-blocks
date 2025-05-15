@@ -213,7 +213,9 @@
                     "h3": "H3",
                     "h4": "H4",
                     "h5": "H5",
-                    "h6": "H6"
+                    "h6": "H6",
+                    "p": "Paragraph (p)",
+                    "span": "Span"
                 },
                 "default_value": "h3",
                 "allow_null": 0,
@@ -248,6 +250,38 @@
                 "placeholder": "",
                 "prepend": "",
                 "append": ""
+            },
+            {
+                "key": "field_pd_show_read_more",
+                "label": "Show Read More Button",
+                "name": "pd_show_read_more",
+                "type": "true_false",
+                "instructions": "Display a 'Read More' button for each post.",
+                "required": 0,
+                "conditional_logic": 0,
+                "ui": 1,
+                "default_value": 0,
+                "ui_on_text": "Yes",
+                "ui_off_text": "No"
+            },
+            {
+                "key": "field_pd_read_more_text",
+                "label": "Read More Button Text",
+                "name": "pd_read_more_text",
+                "type": "text",
+                "instructions": "Customize the text for the 'Read More' button.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_pd_show_read_more",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "default_value": "Read More",
+                "placeholder": "Read More"
             }
         ],
         "location": [
