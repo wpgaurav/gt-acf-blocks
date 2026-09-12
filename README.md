@@ -1,5 +1,7 @@
 # GT ACF Blocks
 
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/gauravtiwari)
+
 A WordPress plugin that provides a framework for easily creating custom Gutenberg blocks using Advanced Custom Fields (ACF).
 
 ## Description
@@ -268,6 +270,14 @@ $title = get_field('title');
 ## Support
 
 For support, feature requests, or bug reports, please submit an issue via the GitHub repository or [send me a message](https://gauravtiwari.org).
+
+Each block you build with GT ACF Blocks lives in its own folder with a block.json, a PHP template and its ACF fields, so you get custom Gutenberg blocks without writing complex JavaScript. The framework is free and open source under GPL v2 or later.
+
+If GT ACF Blocks let you build a custom Gutenberg block while staying in PHP and ACF, you can buy me a coffee.
+
+<a href="https://buymeacoffee.com/gauravtiwari"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy me a coffee" height="50"></a>
+
+Leaving a star helps too, and if a block won't register, an issue with your WordPress, PHP and ACF PRO versions plus its block.json and fields.php makes the problem much easier to track down.
 
 ## License
 
